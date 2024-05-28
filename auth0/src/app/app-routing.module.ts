@@ -4,12 +4,13 @@ import { HomeComponent } from './components/home/home.component';
 import { PreciosComponent } from './components/precios/precios.component';
 import { ProtegidaComponent } from './components/protegida/protegida.component';
 import { authGuard } from './guards/auth.guard';
-
+import { FormtemplateComponent } from './components/formtemplate/formtemplate.component';
 
 const routes: Routes = [
   {path: 'home', component:HomeComponent},
   {path: 'precios', component:PreciosComponent},
   {path: 'protegida', component:ProtegidaComponent, canActivate:[authGuard]},
+  {path: 'formtemplate', component:FormtemplateComponent},
   {path: '', pathMatch: 'full', redirectTo: 'home'},  
   {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
