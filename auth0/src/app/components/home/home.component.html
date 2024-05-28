@@ -1,0 +1,18 @@
+<h1>Home</h1>
+ <hr>
+ 
+<div *ngIf="(auth.isAuthenticated$)">
+    <div *ngIf="auth.user$ | async as user">
+<p >
+Bienvenido{{user.name}}
+</p>
+</div>
+</div>
+
+<div *ngIf="!(auth.isAuthenticated$ | async)"> 
+<p >
+    Home Page
+</p>
+</div>
+
+

@@ -1,0 +1,19 @@
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-container img {
+    max-width: 100px; 
+    border-radius: 30%;
+    margin-bottom: 10px;
+  }
+  
+    .profile-text {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
